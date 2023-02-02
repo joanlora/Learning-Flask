@@ -6,15 +6,15 @@ from app.forms import LoginForm
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': 'Miguel'}
+    user = {'username': 'Joan Jose Lora'}
     posts = [
         {
-            'author': {'username': 'John'},
-            'body': 'Beautiful day in Portland!'
+            'author': {'username': 'Anwar'},
+            'body': 'Beautiful day in Detroit!'
         },
         {
-            'author': {'username': 'Susan'},
-            'body': 'The Avengers movie was so cool!'
+            'author': {'username': 'Valentin'},
+            'body': 'The Last of Us is so good.'
         }
     ]
     return render_template('index.html', title='Home', user=user, posts=posts)
